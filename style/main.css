@@ -1,0 +1,777 @@
+@import url(./fonts.css);
+
+@import url(./reset.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    height: 900px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 50px;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #131313;
+}
+
+.menu-link:hover{
+    color: #2785F7;
+}
+
+.menu-active{
+    color: #2785F7;
+}
+
+.content-main{
+    background-color: #E5E5E5;
+    width: 1404px;
+    height: 726px;
+    margin-top: 32px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 34px 72px 23px;
+}
+
+.content-lessons, .content-team{
+    background-color: #E5E5E5;
+    width: 1366px;
+    height: 742px;
+    margin-top: 14px;
+    border-radius: 30px;
+}
+
+.content-team{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    padding: 55px 35px;
+}
+
+/* Main content page */
+
+.side{
+    height: 420px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    padding: 30px 15px;
+}
+
+.icon{
+    padding: 20px;
+    border-radius: 10px;
+    color: #131313;
+}
+
+.icon:hover{
+    background-color: #2785F7;
+    color: #FEFEFE;
+}
+
+.icon-active{
+    background-color: #2785F7;
+    color: #FEFEFE;
+}
+
+.icon-project,
+.icon-account,
+.icon-groups,
+.icon-cloud,
+.icon-setting{
+    position: relative;
+}
+
+.icon-project::after,
+.icon-account::after,
+.icon-groups::after,
+.icon-cloud::after,
+.icon-setting::after{
+    content: "";
+    color: #FEFEFE;
+    background-color: #2785F7;
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    /* border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    transition-property: right;
+    transition-duration: 0.7s;
+    transition: all 200ms ease;
+}
+
+.icon-project:hover::after{
+    content: "Project";
+    right: -75px;
+    width: 95px;
+}
+
+.icon-account:hover::after{
+    content: "Account";
+    right: -75px;
+    width: 95px;
+}
+
+.icon-groups:hover::after{
+    content: "Groups";
+    right: -75px;
+    width: 95px;
+}
+
+.icon-cloud:hover::after{
+    content: "Cloud";
+    right: -75px;
+    width: 95px;
+}
+
+.icon-setting:hover::after{
+    content: "Setting";
+    right: -75px;
+    width: 95px;
+}
+
+.inform-block{
+    width: 1210px;
+    height: 574px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.inform1{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.name{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    width: 592px;
+    height: 130px;
+    padding-top: 40px;
+    padding-left: 42px;
+}
+
+.text-2{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+
+.text-1{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000000;
+}
+
+.company{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    width: 583px;
+    height: 130px;
+    padding-top: 40px;
+    padding-left: 42px;
+}
+
+.inform2{
+    height: 410px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.inform3{
+    height: 410px;
+    width: 732px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    height: 194px;
+    width: 732px;
+    padding: 44px 66px 34px 42px;
+}
+
+.team{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    height: 194px;
+    width: 732px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 34px 66px 34px 42px;
+}
+
+.team-img{
+    width: 120px;
+    margin-right: 49px;
+}
+
+.portability{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    height: 410px;
+    width: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 34px 39px 38px 42px;
+}
+
+.portability-img{
+    width: 120px;
+}
+
+/* Team content page */
+
+.team-card{
+    background-color: #FEFEFE;
+    border-radius: 30px;
+    height: 278px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.team-card::after{
+    content: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' height='50' width='50' viewBox='0 0 24 24'><path d='M10,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,10,18ZM20,6H16V5a3,3,0,0,0-3-3H11A3,3,0,0,0,8,5V6H4A1,1,0,0,0,4,8H5V19a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V8h1a1,1,0,0,0,0-2ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm7,14a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V8H17Zm-3-1a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,14,18Z' fill='cornflowerblue' /></svg>");
+    display: inline-block;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    background-color: #FEFEFE;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    z-index: -2;
+}
+
+.team-card:hover::after{
+    top: -40px;
+    right: -20px;
+    z-index: 2;
+}
+
+.team-photo{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.name-team{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
+    width: 230px;
+    height: 30px;
+    padding-top: 11px;
+}
+
+.work-place{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    color: #B1B1B1;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.date{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    color: #B1B1B1;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    padding-top: 20px;
+}
+
+.team-card:hover{
+    background-color: #2785F7;
+}
+
+.team-card:hover .name-team{
+    color: #FEFEFE;
+}
+
+.team-card:hover .work-place{
+    color: #FEFEFE;
+}
+
+.team-card:hover .date{
+    color: #FEFEFE;
+}
+
+.text-card:hover::after{
+    border-color: #FEFEFE;
+}
+
+/* Lessons content page */
+
+content-lessons{
+    padding-top: 50px;
+}
+
+table, tr, td{
+    border-collapse: separate;
+    border-spacing: 0px 13px;
+    text-align: center;
+}
+
+.topic-0{
+    text-align: right;
+    padding-right: 60px;
+}
+
+.topic-4{
+    text-align: left;
+    padding-left: 70px;
+}
+
+tr{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #131313;
+}
+
+table{
+    margin: auto;
+    padding-top: 140px;
+    padding-left: 86px;
+    padding-right: 86px;
+}
+
+.centr-block{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 140px;
+    box-sizing: content-box;
+}
+
+.side-block{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 140px;
+    box-sizing: content-box;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.table-icon{
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 25px;
+    box-sizing: content-box;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.lesson-link:hover{
+    background-color: #FEFEFE;
+}
+
+.icon-link{
+    border: 1px solid #131313;
+    border-radius: 5px;
+    padding: 5px;
+    color: #131313;
+}
+
+.icon-link:hover{
+    background-color: #2785F7;
+    color: #FEFEFE;
+}
+
+/* Account content page */
+
+.account-inform-block{
+    width: 1220px;
+    height: 679px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-part-1{
+    width: 615px;
+    height: 679px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.user-block{
+    width: 615px;
+    height: 149px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FEFEFE; 
+    border-radius: 30px;
+    padding-left: 42px;
+}
+
+.user-photo{
+    width: 65px;
+    height: 65px;
+    background-color: #F24F5E;
+    color: #FEFEFE;
+    border-radius: 50px;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.user-inform{
+    width: 205px;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 43px;
+}
+
+.user-name{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.user-email{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+
+.password-form{
+    width: 615px;
+    height: 517px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FEFEFE; 
+    border-radius: 30px;
+}
+
+.password-block{
+    width: 615px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 42px;
+    padding-top: 27px;
+    box-sizing: border-box;
+}
+
+.password-svg{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: #2785F7;
+    color: #FEFEFE;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.password-inform{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 43px;
+}
+
+.change-password{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.password-confines{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+
+.form-box-1{
+    height: 349px;
+    width: 525px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.form-text{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+input::placeholder{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+
+input{
+    padding-left: 14px;
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.enter{
+    height: 63px;
+    width: 524px;
+    border: 1px solid #B1B1B1;
+    border-radius: 15px;
+}
+
+input:focus{
+    border: 2px solid #2785F7;
+}
+
+.form-part-2{
+    width: 588px;
+    height: 679px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FEFEFE; 
+    border-radius: 30px;
+}
+
+.form-box-2{
+    height: 529px;
+    width: 588px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 42px;
+}
+
+.company-block{
+    width: 650px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 42px;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+
+.company-svg{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    background-color: coral;
+    color: #FEFEFE;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.company-inform{
+    width: 433px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 43px;
+}
+
+.company-title{
+    text-decoration: none;
+    font-family: 'Bahij';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.optional-form-inform{
+    text-decoration: none;
+    font-family: 'Chronica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+
+.enter-company-name{
+    height: 63px;
+    width: 494px;
+    border: 1px solid #B1B1B1;
+    border-radius: 15px;
+}
+
+.enter-company-address{
+    height: 100px;
+    width: 494px;
+    border: 1px solid #B1B1B1;
+    border-radius: 15px;
+}
+
+.form-box-3,
+.form-box-4{
+    width: 494px;
+    height: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.enter-2{
+    height: 63px;
+    width: 237px;
+    border: 1px solid #B1B1B1;
+    border-radius: 15px;
+}
